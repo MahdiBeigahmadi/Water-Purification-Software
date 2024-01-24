@@ -14,6 +14,7 @@ and the results of tests done on those units. It must also produce some useful r
 The course website has a capture of some sample output showing how the entire application operates.
  
 1.1 Unit Info
+
 Each water purification system has a:...
 Serial Number: up to 15 numeric digits [0 through 9]; no spaces, letters, punctuation, etc.
 The last two digits are a checksum computed by add up the preceding digits and mod by 100.
@@ -30,6 +31,8 @@ does not need this system to track to where units were shipped: it only tracks t
 shipped (display format YYYY-MM-DD). If it was not shipped, we’ll print “-”.
 
 1.2 Text UI
+
+
 Use a menu driven text UI to interact with the user.
 You may assume all inputs are the correct format (such as an int) when needed.
 For invalid selections on the menu, print an error and retry.
@@ -38,6 +41,8 @@ Many different tables are outputted to the screen; leave two spaces between adja
 improve readability.
 
 1.3 Load from JSON file
+
+
 Prompt the user to type in the path of an input JSON file. The program must load this data, replacing
 any data currently managed by the system. You may assume that the input JSON file is well formatted
 and contains only valid data.
@@ -45,6 +50,7 @@ Generated Jan 23, 2024, 12:42 PM Page 1/4 © Brian Fraser
 Assignment 2: Water Purification Inventory Management CMPT 213 with Dr. Brian
 
 Constraints on JSON file:
+
 • Will be valid JSON
 • Will have correct structure for data, as exemplified by sample file(s).
 • Will have valid model, serial numbers, dates, and other fields.
@@ -59,6 +65,8 @@ Note that the GSON library creates objects without using constructors for initia
 rely on your constructor to build well formed objects or validate field constraints.
 
 1.4 Display Unit Info
+
+
 Prompt the user to type in the serial number of a unit.
 User may type in 0 to see a list of all units in the system, sorted by serial number.
 User may type in -1 to cancel.
@@ -82,6 +90,8 @@ You do not need to enforce maximum lengths on the model and serial number; you m
 the user never exceeds those lengths.
 
 1.6 Test a Unit
+
+
 Prompt user to type in a serial number of a unit (same as Display Unit Info option).
 Prompt user to enter if the test passed or not. Entering a blank line assumes the test is a pass.
 Otherwise user may enter ‘y’ or ‘n’, case insensitive for yes or no respectively.
@@ -91,11 +101,15 @@ Generated Jan 23, 2024, 12:42 PM Page 2/4 © Brian Fraser
 Assignment 2: Water Purification Inventory Management CMPT 213 with Dr. Brian
 
 1.7 Ship a Unit
+
+
 Prompt user to type in a serial number of a unit (same as Display Unit Info option).
 Record that the unit has shipped on today’s date. If the unit had previously shipped, update the
 ship date to today’s date.
 
 1.8 Print Report
+
+
 Prompt the user to select one of the following reports:
 All: Print report of all units.
 Display columns: model, serial number, total # tests done on this unit, ship date (YYYYMM-DD, or “-” if none).
