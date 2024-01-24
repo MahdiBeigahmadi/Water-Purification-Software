@@ -10,8 +10,8 @@ ships water purification systems (“units”) around the world. For this assign
 a Java program which allows the user to manage their inventory of units. It must track individual units,
 and the results of tests done on those units. It must also produce some useful reports.
 
-1. Features
-The course website has a capture of some sample output showing how the entire application operates.
+
+1. Features:  The course website has a capture of some sample output showing how the entire application operates.
  
 1.1 Unit Info
 
